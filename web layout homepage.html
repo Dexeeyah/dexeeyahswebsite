@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The 17 Sustainable Development Goals</title>
+  <style>
+    body {
+      background-image: url("bg.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      width: 100%;
+      height: 10vh;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .logo {
+      color: #000;
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+
+    .logo span {
+      color: #000;
+    }
+
+    .nav-container .links {
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .nav-container .links a {
+      position: relative;
+      font-size: 1.2rem;
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s linear;
+    }
+
+    .nav-container .links a::before {
+      position: absolute;
+      content: "";
+      bottom: -3px;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background-color: #f6e1d9;
+      transition: 0.2s linear;
+    }
+
+    .nav-container .links a:hover::before {
+      width: 100%;
+    }
+
+    .nav-container .contact-btn {
+      background-color: transparent;
+      padding: 5px 20px;
+      border-radius: 20px;
+      border: 2px solid #4d425b;
+      transition: 0.2s linear;
+    }
+
+    .nav-container .contact-btn a {
+      color: #fff;
+      transition: 0.3s linear;
+    }
+
+    .nav-container .contact-btn:hover,
+    .nav-container .contact-btn:hover a {
+      background-color: #4d425b;
+      color: #fff;
+    }
+
+    .nav-container .links a:hover {
+      color: #4d425b;
+    }
+
+    .navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0 50px;
+      overflow: hidden;
+      background-color: #ca8d5b;
+    }
+
+    .navbar li {
+      float: right;
+    }
+
+    .navbar li a, .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar li a:hover, .dropdown:hover .dropbtn {
+      background-color: #a06a3d;
+    }
+
+    .navbar li.dropdown {
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ca8d5b;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #a06a3d;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    header {
+      background-color: #ca8d5b;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      color: white;
+      font-size: 36px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+    }
+
+    .item1, .item2 {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .item1 h1, .item2 h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    p, ul {
+      font-size: 18px;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #ca8d5b;
+      text-align: center;
+      padding: 10px;
+      color: white;
+      font-size: 16px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <span>Dexeeyah</span>
+      </div>
+      <div class="links">
+        <div class="link"><a href="homepage.html">Home</a></div>
+        <div class="link"><a href="works.html">Works</a></div>
+        <div class="link contact-btn"><a href="contact.html">Contact Us</a></div>
+      </div>
+    </div>
+  </nav>
+
+  <ul class="navbar">
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">The 17 SDGs</a>
+      <div class="dropdown-content">
+        <a href="web%20layout%20no%20poverty%20page.html">No Poverty</a>
+        <a href="#">Zero Hunger</a>
+        <a href="#">Good Health and Well-Being</a>
+        <a href="#">Quality Education</a>
+        <a href="#">Gender Equality</a>
+        <a href="#">Clean Water and Sanitation</a>
+        <a href="#">Affordable and Clean Energy</a>
+        <a href="#">Decent Work and Economic Growth</a>
+        <a href="#">Industry, Innovation, and Infrastructure</a>
+        <a href="#">Reduced Inequalities</a>
+        <a href="#">Sustainable Cities and Communities</a>
+        <a href="#">Responsible Consumption and Production</a>
+        <a href="#">Climate Action</a>
+        <a href="#">Life Below Water</a>
+        <a href="#">Life on Land</a>
+        <a href="#">Peace, Justice, and Strong Institutions</a>
+        <a href="#">Partnerships for the Goals</a>
+      </div>
+    </li>
+    <li><a href="web%20layout%20homepage.html">Home</a></li>
+  </ul>
+
+  <header>
+    <h1>The 17 Sustainable Development Goals</h1>
+  </header>
+
+  <div class="container">
+    <div class="item1">
+      <h1>History</h1>
+      <p>The 2030 Agenda for Sustainable Development, adopted by all United Nations Member States in 2015, provides a shared blueprint for peace and prosperity for people and the planet, now and into the future. At its heart are the 17 Sustainable Development Goals (SDGs), which are an urgent call for action by all countries – developed and developing – in a global partnership. They recognize that ending poverty and other deprivations must go hand-in-hand with strategies that improve health and education, reduce inequality, and spur economic growth – all while tackling climate change and working to preserve our oceans and forests.</p>
+
+      <p>The SDGs build on decades of work by countries and the UN, including the UN Department of Economic and Social Affairs:</p>
+      <ul>
+        <li>In June 1992, at the Earth Summit in Rio de Janeiro, Brazil, more than 178 countries adopted Agenda 21...</li>
+        <li>In 2000, the Millennium Declaration led to 8 Millennium Development Goals (MDGs)...</li>
+        <li>The Johannesburg Declaration in 2002 reaffirmed global commitments...</li>
+        <li>In 2012, Rio+20 produced "The Future We Want" and launched the SDG process...</li>
+        <li>In 2013, the UN formed a 30-member Open Working Group for SDG proposals.</li>
+        <li>In 2015, the 2030 Agenda was adopted, with the 17 SDGs at its core.</li>
+        <li>Major 2015 agreements:
+          <ul>
+            <li>Sendai Framework for Disaster Risk Reduction</li>
+            <li>Addis Ababa Action Agenda for development financing</li>
+            <li>Paris Agreement on Climate Change</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="item2">
+      <h2>Related Events</h2>
+      <p>National Capacity Building Workshop on Strengthening Entrepreneurship and Access to Affordable Finance among MSMEs in Ethiopia</p>
+      <p>2025 ECOSOC Partnership Forum</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>The 17 SDGs &copy; 2025</p>
+  </footer>
+
+</body>
+</html>
