@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8" />
+  <title>Registration Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url("bg.jpg");
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+    }
+
+    h2 {
+      text-align: center;
+      color: #4d425b;
+    }
+
+    .container {
+      margin: 60px auto;
+      padding: 40px;
+      width: 50%;
+      border-radius: 10px;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0 20px 0;
+      border: none;
+      border-radius: 5px;
+      background: #ca8d5b7e;
+      color: #000;
+      font-family: inherit;
+    }
+
+    input[type="text"]:focus,
+    select:focus {
+      background-color: #ca8d5bd3;
+      outline: none;
+    }
+
+    input::placeholder {
+      color: #000;
+      opacity: 1;
+    }
+
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    ul li {
+      list-style-type: none;
+      margin: 5px 0;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    hr {
+      border: 1px solid #ca8d5bd3;
+      margin-bottom: 25px;
+    }
+
+    .registerbtn {
+      background-color: #ca8d5bd3;
+      color: black;
+      padding: 16px 20px;
+      margin-top: 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+      border-radius: 5px;
+    }
+
+    .registerbtn:hover {
+      opacity: 1;
+    }
+
+    nav {
+      width: 100%;
+      height: 10vh;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .logo {
+      color: #000;
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+
+    .nav-container .links {
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .nav-container .links a {
+      position: relative;
+      font-size: 1.2rem;
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s linear;
+    }
+
+    .nav-container .links a::before {
+      position: absolute;
+      content: "";
+      bottom: -3px;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background-color: #f6e1d9;
+      transition: 0.2s linear;
+    }
+
+    .nav-container .links a:hover::before {
+      width: 100%;
+    }
+
+    .nav-container .contact-btn {
+      background-color: transparent;
+      padding: 5px 20px;
+      border-radius: 20px;
+      border: 2px solid #4d425b;
+      transition: 0.2s linear;
+    }
+
+    .nav-container .contact-btn a {
+      color: #fff;
+      transition: 0.3s linear;
+    }
+
+    .nav-container .contact-btn:hover,
+    .nav-container .contact-btn:hover a {
+      background-color: #4d425b;
+      color: #fff;
+    }
+
+    .nav-container .links a:hover {
+      color: #4d425b;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class = "nav-container">
+      <div class = "logo">
+        <span>Dexeeyah</span>
+      </div>
+      <div class = "links">
+        <div class = "link"><a href = "index.html">Home</a></div>
+        <div class = "link"><a href = "works.html">Works</a></div>
+        <div class = "link contact-btn"><a href = "contact.html">Contact Us</a></div>
+      </div>
+    </div>
+  </nav>
+
+  <form>
+    <div class = "container">
+      <h2>Registration Form on UN SDGs</h2>
+      <hr>
+
+      <label for = "name">Name:</label>
+      <input type = "text" id = "name" name = "name" placeholder = "Enter Full Name" required>
+
+      <label for = "email">Email:</label>
+      <input type = "text" id = "email" name = "email" placeholder = "Enter Email Address" required>
+
+      <label for = "age">Age:</label>
+      <select name = "age" id = "age">
+        <option selected disabled>Select your age group</option>
+        <option>9 & below</option>
+        <option>10-19</option>
+        <option>20-29</option>
+        <option>30-39</option>
+        <option>40-49</option>
+        <option>50-59</option>
+        <option>60-69</option>
+        <option>70-79</option>
+        <option>80-89</option>
+        <option>90-99</option>
+        <option>100 & above</option>
+      </select>
+
+      <label for = "gender">Gender:</label>
+      <select name = "gender" id="gender">
+        <option selected disabled>Select gender</option>
+        <option>I prefer not to disclose</option>
+                <option>Agender</option>
+                <option>Abimegender</option>
+                <option>Adamas Gender</option>
+                <option>Aerogender</option>
+                <option>Aesthetigender</option>
+                <option>Affectugender</option>
+                <option>Agenderflux</option>
+                <option>Alexigender</option>
+                <option>Aliusgender</option>
+                <option>Amaregender</option>
+                <option>Ambigender</option>
+                <option>Ambonec</option>
+                <option>Amicagender</option>
+                <option>Androgyne</option>
+                <option>Anesigender</option>
+                <option>Angenital</option>
+                <option>Anogender</option>
+                <option>Anongender</option>
+                <option>Antegender</option>
+                <option>Anxiegender:</option>
+                <option>Apagender</option>
+                <option>Apconsugender</option>
+                <option>Astergender</option>
+                <option>Astral Gender</option>
+                <option>Autigender</option>
+                <option>Autogender</option>
+                <option>Axigender</option>
+                <option>Bigender</option>
+                <option>Biogender</option>
+                <option>Blurgender</option>
+                <option>Boyflux</option>
+                <option>Burstgender</option>
+                <option>Caelgender</option>
+                <option>Cassgender</option>
+                <option>Cassflux</option>
+                <option>Cavusgender</option>
+                <option>Cendgender</option>
+                <option>Ceterogender</option>
+                <option>Ceterofluid</option>
+                <option>Cisgender</option>
+                <option>Cloudgender</option>
+                <option>Collgender</option>
+                <option>Colorgender</option>
+                <option>Commogender</option>
+                <option>Condigender</option>
+                <option>Deliciagender</option>
+                <option>Demifluid</option>
+                <option>Demiflux</option>
+                <option>Demigender</option>
+                <option>Domgender</option>
+                <option>Duragender</option>
+                <option>Egogender</option>
+                <option>Epicene</option>
+                <option>Esspigender</option>
+                <option>Exgender</option>
+                <option>Existigender</option>
+                <option>Femfluid</option>
+                <option>Femgender</option>
+                <option>Fluidflux</option>
+                <option>Gemigender</option>
+                <option>Genderblank</option>
+                <option>Genderflow</option>
+                <option>Genderfluid</option>
+                <option>Genderfuzz</option>
+                <option>Genderflux</option>
+                <option>Genderpuck</option>
+                <option>Genderqueer</option>
+                <option>Gender Witched</option>
+                <option>Girlflux</option>
+                <option>Healgender</option>
+                <option>Mirrorgender</option>
+                <option>Omnigender</option>
+      </select>
+
+      <hr>
+
+      <label><b>SDG(s) of Interest:</b></label>
+      <ul>
+        <li><label><input type = "checkbox" name = "sdg" value = "No Poverty"> No Poverty</label></li>
+        <li><label><input type = "checkbox" name = "sdg" value = "Zero Hunger"> Zero Hunger</label></li>
+        <li><label><input type = "checkbox" name = "sdg" value = "Good Health and Well-Being"> Good Health and Well-Being</label></li>
+        <li><label><input type = "checkbox" name = "sdg" value = "Quality Education"> Quality Education</label></li>
+        <li><label><input type = "checkbox" name = "sdg" value = "Gender Equality"> Gender Equality</label></li>
+        <li><label><input type = "checkbox" name = "sdg" value = "Clean Water and Sanitation"> Clean Water and Sanitation</label></li>
+        <li><label><input type = "checkbox" name = "sdg" value = "Affordable and Clean Energy"> Affordable and Clean Energy</label></li>
+        <li><label><input type = "checkbox" name = "sdg" value = "Decent Work and Economic Growth"> Decent Work and Economic Growth</label></li>
+        <li><label><input type = "checkbox" name = "sdg" value = "Industry, Innovation, and Infrastructure"> Industry, Innovation, and Infrastructure</label></li>
+        <li><label><input type = "checkbox" name = "sdg" value = "Reduced Inequalities"> Reduced Inequalities</label></li>
+        <li><label><input type = "checkbox" name = "sdg" value = "Sustainable Cities and Communities"> Sustainable Cities and Communities</label></li>
+        <li><label><input type = "checkbox" name = "sdg" value = "Responsible Consumption and Production"> Responsible Consumption and Production</label></li>
+        <li><label><input type = "checkbox" name = "sdg" value = "Climate Action"> Climate Action</label></li>
+        <li><label><input type = "checkbox" name = "sdg" value = "Life Below Water"> Life Below Water</label></li>
+        <li><label><input type = "checkbox" name = "sdg" value = "Life on Land"> Life on Land</label></li>
+        <li><label><input type = "checkbox" name = "sdg" value = "Peace, Justice, and Strong Institutions"> Peace, Justice, and Strong Institutions</label></li>
+        <li><label><input type = "checkbox" name = "sdg" value = "Partnerships for the Goals"> Partnerships for the Goals</label></li>
+      </ul>
+
+      <hr>
+
+      <button type = "submit" class = "registerbtn">Register</button>
+    </div>
+  </form>
+</body>
+</html>
