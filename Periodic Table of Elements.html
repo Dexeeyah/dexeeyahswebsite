@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8" />
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+  <title>Periodic Table of Elements</title>
+  <style>
+    body {
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Times New Roman', serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      width: 100%;
+      height: 10vh;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .logo {
+      color: #000;
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+
+    .nav-container .links {
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .nav-container .links .link a {
+      position: relative;
+      font-size: 1.2rem;
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s linear;
+    }
+
+    .nav-container .links .link a::before {
+      position: absolute;
+      content: "";
+      bottom: -3px;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background-color: #654321;
+      transition: 0.2s linear;
+    }
+
+    .nav-container .links .link a:hover::before {
+      width: 100%;
+    }
+
+    .link.contact-btn {
+      padding: 5px 20px;
+      border-radius: 20px;
+      border: 2px solid #A97142;
+      background-color: transparent;
+      transition: 0.3s ease;
+    }
+
+    .link.contact-btn a {
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .link.contact-btn:hover {
+      background-color: #A97142;
+    }
+
+    .link.contact-btn:hover a {
+      color: #fff;
+    }
+
+    .nav-container .links .link a:hover {
+      color: #A97142;
+    }
+
+    h1 {
+      color: #654321;
+      font-size: 3rem;
+      margin: 30px 0 20px;
+    }
+
+    table {
+      width: 90%;
+      margin: 0 auto 50px;
+      border-collapse: collapse;
+    }
+
+    td {
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-weight: bold;
+      padding: 10px;
+      color: #333;
+    }
+
+    .empty {
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class = "nav-container">
+      <div class = "logo">
+        <span>Dexeeyah</span>
+      </div>
+      <div class = "links">
+        <div class = "link"><a href = "index.html">Home</a></div>
+        <div class = "link"><a href = "works.html">Works</a></div>
+        <div class = "link contact-btn"><a href = "contact.html">Contact Us</a></div>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Periodic Table of Elements</h1>
+
+  <table>
+                <tr>
+                    <td></td>
+                    <th>1</th>
+                    <td colspan = "16"></td>
+                    <th>18</th>
+                </tr>
+
+                <tr>
+                    <th>1</th>
+                    <td bgcolor = #ff9999>H</td>
+                    <th>2</th>
+                    <td colspan = "10"></td>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                    <th>16</th>
+                    <th>17</th>
+                    <td bgcolor = #d9d9d9>He</td>
+                </tr>
+    
+                <tr>
+                    <th>2</th>
+                    <td bgcolor = #ffdab3>Li</td>
+                    <td bgcolor = #ffce99>Be</td>
+                    <td colspan = "10"> </td>
+                    <td bgcolor = #ffffb3>B</td>
+                    <td bgcolor = #ff9999>C</td>
+                    <td bgcolor = #ff9999>N</td>
+                    <td bgcolor = #ff9999>O</td>
+                    <td bgcolor = #84e184>F</td>
+                    <td bgcolor = #d9d9d9>Ne</td>
+                </tr>
+    
+                <tr>
+                    <th>3</th>
+                    <td bgcolor = #ffdab3>Na</td>
+                    <td bgcolor = #ffce99>Mg</td>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <td bgcolor = #ffcccc>Al</td>
+                    <td bgcolor = #ffffb3>Si</td>
+                    <td bgcolor = #ff9999>P</td>
+                    <td bgcolor = #ff9999>S</td>
+                    <td bgcolor = #84e184>Cl</td>
+                    <td bgcolor = #d9d9d9>Ar</td>
+                </tr>
+    
+                <tr>
+                    <th>4</th>
+                    <td bgcolor = #ffdab3>K</td>
+                    <td bgcolor = #ffce99>Ca</td>
+                    <td bgcolor = #adebad>Sc</td>
+                    <td bgcolor = #ccccff>Ti</td>
+                    <td bgcolor = #ccccff>V</td>
+                    <td bgcolor = #ccccff>Cr</td>
+                    <td bgcolor = #ccccff>Mn</td>
+                    <td bgcolor = #ccccff>Fe</td>
+                    <td bgcolor = #ccccff>Co</td>
+                    <td bgcolor = #ccccff>Ni</td>
+                    <td bgcolor = #ccccff>Cu</td>
+                    <td bgcolor = #ccccff>Zn</td>
+                    <td bgcolor = #ffcccc>Ga</td>
+                    <td bgcolor = #ffffb3>Ge</td>
+                    <td bgcolor = #ffffb3>As</td>
+                    <td bgcolor = #ff9999>Se</td>
+                    <td bgcolor = #84e184>Br</td>
+                    <td bgcolor = #d9d9d9>Kr</td>
+                </tr>
+    
+                <tr>
+                    <th>5</th>
+                    <td bgcolor = #ffdab3>Rb</td>
+                    <td bgcolor = #ffce99>Sr</td>
+                    <td bgcolor = #adebad>Y</td>
+                    <td bgcolor = #ccccff>Zr</td>
+                    <td bgcolor = #ccccff>Nb</td>
+                    <td bgcolor = #ccccff>Mo</td>
+                    <td bgcolor = #ccccff>Tc</td>
+                    <td bgcolor = #ccccff>Ru</td>
+                    <td bgcolor = #ccccff>Rh</td>
+                    <td bgcolor = #ccccff>Pd</td>
+                    <td bgcolor = #ccccff>Ag</td>
+                    <td bgcolor = #ccccff>Cd</td>
+                    <td bgcolor = #ffcccc>In</td>
+                    <td bgcolor = #ffcccc>Sn</td>
+                    <td bgcolor = #ffffb3>Sb</td>
+                    <td bgcolor = #ffffb3>Te</td>
+                    <td bgcolor = #84e184>I</td>
+                    <td bgcolor = #d9d9d9>Xe</td>
+                </tr>
+    
+                <tr>
+                    <th>6</th>
+                    <td bgcolor = #ffdab3>Cs</td>
+                    <td bgcolor = #ffce99>Ba</td>
+                    <td bgcolor = #adebad></td>
+                    <td bgcolor = #ccccff>Hf</td>
+                    <td bgcolor = #ccccff>Ta</td>
+                    <td bgcolor = #ccccff>W</td>
+                    <td bgcolor = #ccccff>Re</td>
+                    <td bgcolor = #ccccff>Os</td>
+                    <td bgcolor = #ccccff>Ir</td>
+                    <td bgcolor = #ccccff>Pt</td>
+                    <td bgcolor = #ccccff>Au</td>
+                    <td bgcolor = #ccccff>Hg</td>
+                    <td bgcolor = #ffcccc>Tl</td>
+                    <td bgcolor = #ffcccc>Pb</td>
+                    <td bgcolor = #ffffb3>Bi</td>
+                    <td bgcolor = #ffffb3>Po</td>
+                    <td bgcolor = #84e184>At</td>
+                    <td bgcolor = #d9d9d9>Rn</td>
+                </tr>
+    
+                <tr>
+                    <th>7</th>
+                    <td bgcolor = #ffdab3>Fr</td>
+                    <td bgcolor = #ffce99>Ra</td>
+                    <td bgcolor = #b3e6ff></td>
+                    <td bgcolor = #ccccff>Rf</td>
+                    <td bgcolor = #ccccff>Db</td>
+                    <td bgcolor = #ccccff>Sg</td>
+                    <td bgcolor = #ccccff>Bh</td>
+                    <td bgcolor = #ccccff>Hs</td>
+                    <td bgcolor = #ccccff>Mt</td>
+                    <td bgcolor = #ccccff>Ds</td>
+                    <td bgcolor = #ccccff>Rg</td>
+                    <td bgcolor = #ccccff>Cn</td>
+                    <td bgcolor = #ffcccc>Nh</td>
+                    <td bgcolor = #ffcccc>Fl</td>
+                    <td bgcolor = #ffcccc>Mc</td>
+                    <td bgcolor = #ffcccc>Lv</td>
+                    <td bgcolor = #84e184>Ts</td>
+                    <td bgcolor = #d9d9d9>Og</td>
+                </tr>
+
+                <tr>
+                    <td colspan = "18"></td>
+                </tr>
+
+                <tr>
+                    <td colspan = "18"></td>
+                </tr>
+
+                <tr>
+                    <td colspan = "2"></td>
+                    <th>6</th>
+                    <td bgcolor = #adebad>La</td>
+                    <td bgcolor = #adebad>Ce</td>
+                    <td bgcolor = #adebad>Pr</td>
+                    <td bgcolor = #adebad>Nd</td>
+                    <td bgcolor = #adebad>Pm</td>
+                    <td bgcolor = #adebad>Sm</td>
+                    <td bgcolor = #adebad>Eu</td>
+                    <td bgcolor = #adebad>Gd</td>
+                    <td bgcolor = #adebad>Tb</td>
+                    <td bgcolor = #adebad>Dy</td>
+                    <td bgcolor = #adebad>Ho</td>
+                    <td bgcolor = #adebad>Er</td>
+                    <td bgcolor = #adebad>Tm</td>
+                    <td bgcolor = #adebad>Yb</td>
+                    <td bgcolor = #adebad>Lu</td>
+                </tr>
+
+                <tr>
+                    <td colspan = "2"></td>
+                    <th>7</th>
+                    <td bgcolor = #b3e6ff>Ac</td>
+                    <td bgcolor = #b3e6ff>Th</td>
+                    <td bgcolor = #b3e6ff>Pa</td>
+                    <td bgcolor = #b3e6ff>U</td>
+                    <td bgcolor = #b3e6ff>Np</td>
+                    <td bgcolor = #b3e6ff>Pu</td>
+                    <td bgcolor = #b3e6ff>Am</td>
+                    <td bgcolor = #b3e6ff>Cm</td>
+                    <td bgcolor = #b3e6ff>Bk</td>
+                    <td bgcolor = #b3e6ff>Cf</td>
+                    <td bgcolor = #b3e6ff>Es</td>
+                    <td bgcolor = #b3e6ff>Fm</td>
+                    <td bgcolor = #b3e6ff>Md</td>
+                    <td bgcolor = #b3e6ff>No</td>
+                    <td bgcolor = #b3e6ff>Lr</td>
+                </tr>
+            </table>
+</body>
+</html>
